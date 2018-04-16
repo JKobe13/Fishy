@@ -1,0 +1,11 @@
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\bin\Debug\netcoreapp2.0\Fishy.WebApp.deps.json
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\bin\Debug\netcoreapp2.0\Fishy.WebApp.runtimeconfig.json
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\bin\Debug\netcoreapp2.0\Fishy.WebApp.runtimeconfig.dev.json
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\bin\Debug\netcoreapp2.0\Fishy.WebApp.dll
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\bin\Debug\netcoreapp2.0\Fishy.WebApp.pdb
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.csprojResolveAssemblyReference.cache
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.csproj.CoreCompileInputs.cache
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.AssemblyInfoInputs.cache
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.AssemblyInfo.cs
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.dll
+D:\REPO\2018-Fishy-CoreSPA-Demo\Fishy-CoreSPA-Demo\Fishy.WebApp\obj\Debug\netcoreapp2.0\Fishy.WebApp.pdb
