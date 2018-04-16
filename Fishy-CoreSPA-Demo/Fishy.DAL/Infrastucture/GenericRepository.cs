@@ -7,7 +7,7 @@ namespace Fishy.DAL.Infrastucture
 {
     public abstract class GenericRepository<TEntity> where TEntity : Entity
     {
-        protected IEnumerable<TEntity> _items;
+        public IEnumerable<TEntity> _items;
 
         protected GenericRepository(IEnumerable<TEntity> itemsCollection)
         {

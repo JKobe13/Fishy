@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Fishy.DAL.Models
 {
-    class Product:Entity
+    public class Product:Entity
     {
         public string Name { get; set; }
 

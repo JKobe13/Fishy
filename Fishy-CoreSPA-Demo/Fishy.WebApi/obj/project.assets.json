@@ -13147,11 +13147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\REPO\\2018-Fishy-CoreSPA-Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
+      "projectUniqueName": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
       "projectName": "Fishy.WebApi",
-      "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA-Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
+      "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
       "packagesPath": "C:\\Users\\jkobylko\\.nuget\\packages\\",
-      "outputPath": "D:\\REPO\\2018-Fishy-CoreSPA-Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\obj\\",
+      "outputPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -13172,8 +13172,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\REPO\\2018-Fishy-CoreSPA-Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj": {
-              "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA-Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj"
+            "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj": {
+              "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj"
             }
           }
         }
