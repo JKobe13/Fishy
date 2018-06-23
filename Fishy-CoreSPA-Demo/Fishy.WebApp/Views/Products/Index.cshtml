@@ -1,0 +1,26 @@
+﻿@model Fishy.WebApp.ViewModels.Products.ProductIndexViewModel
+@{
+    ViewData["Title"] = "Produkty";
+}
+
+<h2>Produkty</h2>
+
+<table>
+    <tr>
+        <td>Nazwa</td>
+        <td>opis</td>
+    </tr>
+    <tbody>
+        @foreach (var singleProduct in Model.ProductsCollection)
+        {
+            <tr>
+                <td>
+                    @singleProduct.Name
+                </td>
+                <td>
+                    @singleProduct.Description
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

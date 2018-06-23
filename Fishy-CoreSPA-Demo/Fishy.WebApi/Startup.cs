@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Fishy.DAL.Repositories;
+using Fishy.Infrastructure.Interfaces.Services;
+using Fishy.Infrastructure.Services;
 
 namespace Fishy.WebApi
 {
@@ -14,6 +16,7 @@ namespace Fishy.WebApi
             services.AddMvc();
 
             services.AddSingleton<IProductsRepository, ProductsRepository>();
+            services.AddSingleton<IProductServices, ProductServices>();
 
         }
 

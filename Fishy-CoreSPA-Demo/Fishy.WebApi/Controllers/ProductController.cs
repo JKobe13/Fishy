@@ -1,50 +1,40 @@
-﻿using Fishy.Infrastructure.Interfaces.Services;
+﻿using Fishy.DAL.Models;
+using Fishy.Infrastructure.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Fishy.WebApi.Controllers
 {
-    [Produces("application/json")]
-    [Route("api/v1/[controller]")]
+    [Route("v1/[controller]")]
     public class ProductController : Controller
     {
-        private IProductService _productService;
+        private IProductServices _productService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductServices productService)
         {
             _productService = productService;
         }
 
         [HttpGet]
-        public JsonResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Json(_productService.GetNavigationList());
+            var products = await _productService.GetNavigationList();
+            return new ObjectResult(products);
         }
 
-        // GET: api/Default/5
         [HttpGet("{id}", Name = "Get")]
-        public JsonResult Get(int id)
+        public IActionResult Get(int id)
         {
-            return Json(_productService.Get(id));
+            return new ObjectResult(_productService.Get(id));
         }
 
-        // POST: api/Default
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]Product model)
         {
-        }
+            var createdProduct = _productService.Add(model);
 
-        // PUT: api/Default/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
+            return CreatedAtRoute("Get", new { id = createdProduct.Id },createdProduct);
         }
-
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
-
     }
 }

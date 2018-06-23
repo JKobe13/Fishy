@@ -4,6 +4,8 @@ using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Fishy.Infrastructure.Interfaces.Services;
+using Fishy.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -19,6 +21,7 @@ namespace Fishy.WebApp
         {
             services.AddMvc();
 
+            services.AddSingleton<IProductServices, ProductApiService>();
             services.AddSingleton(x => new HttpClient { BaseAddress = new Uri("http://localhost:5000") });
         }
 

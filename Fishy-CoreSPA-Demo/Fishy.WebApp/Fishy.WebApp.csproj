@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fishy.DAL\Fishy.DAL.csproj" />
+    <ProjectReference Include="..\Fishy.Infrastructure\Fishy.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
