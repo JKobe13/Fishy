@@ -13140,25 +13140,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jkobylko\\.nuget\\packages\\": {},
+    "C:\\Users\\JKobe\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
+      "projectUniqueName": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
       "projectName": "Fishy.WebApi",
-      "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
-      "packagesPath": "C:\\Users\\jkobylko\\.nuget\\packages\\",
-      "outputPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\obj\\",
+      "projectPath": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\Fishy.WebApi.csproj",
+      "packagesPath": "C:\\Users\\JKobe\\.nuget\\packages\\",
+      "outputPath": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jkobylko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JKobe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -13172,8 +13172,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj": {
-              "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj"
+            "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj": {
+              "projectPath": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.DAL\\Fishy.DAL.csproj"
             }
           }
         }

@@ -13124,25 +13124,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jkobylko\\.nuget\\packages\\": {},
+    "C:\\Users\\JKobe\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\Fishy.WebApp.csproj",
+      "projectUniqueName": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\Fishy.WebApp.csproj",
       "projectName": "Fishy.WebApp",
-      "projectPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\Fishy.WebApp.csproj",
-      "packagesPath": "C:\\Users\\jkobylko\\.nuget\\packages\\",
-      "outputPath": "D:\\REPO\\2018-Fishy-CoreSPA--Demo\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\obj\\",
+      "projectPath": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\Fishy.WebApp.csproj",
+      "packagesPath": "C:\\Users\\JKobe\\.nuget\\packages\\",
+      "outputPath": "C:\\REPO\\Fishy\\Fishy-CoreSPA-Demo\\Fishy.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jkobylko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JKobe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
