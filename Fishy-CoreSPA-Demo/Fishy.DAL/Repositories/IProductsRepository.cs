@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Fishy.DAL.Repositories
 {
-    public interface IProductsRepository
+    public interface IProductsRepository: IGenericRepository<Product>
     {
 
     }

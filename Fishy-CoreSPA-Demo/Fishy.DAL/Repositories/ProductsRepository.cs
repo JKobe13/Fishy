@@ -17,5 +17,6 @@ namespace Fishy.DAL.Repositories
         };
 
         public ProductsRepository() : base(_defaultItems) {}
+
     }
 }

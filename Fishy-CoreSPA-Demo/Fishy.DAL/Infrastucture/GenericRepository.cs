@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Fishy.DAL.Infrastucture
 {
-    public abstract class GenericRepository<TEntity> where TEntity : Entity
+    public abstract class GenericRepository<TEntity>:IGenericRepository<TEntity> where TEntity : Entity 
     {
         public IEnumerable<TEntity> _items;
 
