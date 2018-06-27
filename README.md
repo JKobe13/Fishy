@@ -3,7 +3,8 @@
 
 TO DO:
 -CI (jenkins?)
--Add header forwards for nginx
+- appsettings/connection strings
 
 DONE:
 -git ignore
+-Add header forwards for nginx

@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Fishy.DAL.Repositories;
 using Fishy.Infrastructure.Interfaces.Services;
 using Fishy.Infrastructure.Services;
+using Microsoft.AspNetCore.HttpOverrides;
+using System.Linq;
 
 namespace Fishy.WebApi
 {
@@ -23,6 +25,22 @@ namespace Fishy.WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.All
+            });
+
+            app.Use(async (context, next) =>
+            {
+                var forwardedPath = context.Request.Headers["X-Forwarded-Path"].FirstOrDefault();
+                if (!string.IsNullOrEmpty(forwardedPath))
+                {
+                    context.Request.PathBase = forwardedPath;
+                }
+
+                await next();
+            });
+
             app.UseMvc();
         }
     }
