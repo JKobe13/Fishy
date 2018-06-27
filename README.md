@@ -3,7 +3,7 @@
 
 TO DO:
 -CI (jenkins?)
-
+-Add header forwards for nginx
 
 DONE:
 -git ignore
