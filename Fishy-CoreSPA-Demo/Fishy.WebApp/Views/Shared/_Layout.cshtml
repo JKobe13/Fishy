@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="~/css/w3.css">
 </head>
 <body>
-    <div class="layout-header" style="border-bottom:solid">
-        <img class="layout-header-logo" src="~/img/Logo.png" style="height:55px;"/> 
-        <span style="font-size:25px; font-weight:bold">Fishy Stuff</span> 
+    <div class="layout-header">
+        <img class="layout-header-logo" src="~/images/Logo.png" style="height:55px;"/> 
+        <span class="layout-header-logotype">Fishy Stuff</span> 
     </div>
     <div>
         <div class="layout-header-tab">@Html.ActionLink("Home", "Index", "Home")</div>
@@ -42,5 +42,17 @@
         margin-top:25px;
         padding:15px;
         border:solid;
+    }
+
+    .layout-header {
+        border-bottom: solid;
+        background-color: crimson;
+        padding: 5px 20px 0px 20px;
+    }
+
+    .layout-header-logotype {
+        font-size: 30px;
+        font-weight: bold;
+        vertical-align: middle;
     }
 </style>
