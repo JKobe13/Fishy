@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/w3.css">
+</head>
+<body>
+    <div class="layout-header" style="border-bottom:solid">
+        <img class="layout-header-logo" src="~/img/Logo.png" style="height:55px;"/> 
+        <span style="font-size:25px; font-weight:bold">Fishy Stuff</span> 
+    </div>
+    <div>
+        <div class="layout-header-tab">@Html.ActionLink("Home", "Index", "Home")</div>
+        <div class="layout-header-tab">@Html.ActionLink("Produkty", "Index", "Products")</div>
+        <br style="clear:both;" />
+    </div>
+    <div class="body-section">
+        @RenderBody()
+    </div>
+</body>
+</html>
+
+<style>
+    .layout-header-tab
+    {
+        padding:3px 3px 3px 10px;
+        float:left;
+        border-bottom: solid;
+        border-right:solid;
+        width:200px;
+        height:100%
+    }
+
+    .first-tab {
+        border-left: solid;
+    }
+
+    .body-section{
+        width:900px;
+        margin:auto;
+        margin-top:25px;
+        padding:15px;
+        border:solid;
+    }
+</style>
