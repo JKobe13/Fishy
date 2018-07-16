@@ -8,6 +8,8 @@ namespace Fishy.DAL.Infrastucture
     {
         TEntity Get(int id);
 
+        IEnumerable<TEntity> Get(IEnumerable<int> ids);
+
         IEnumerable<TEntity> GetAll();
 
         IEnumerable<TEntity> Find(Func<TEntity, bool> predicate);

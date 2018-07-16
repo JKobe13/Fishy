@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Fishy.Infrastructure.Services
 {
-    public class ProductServices : IProductServices
+    public class ProductsServices : IProductsServices
     {
         private IProductsRepository _productRepository;
 
-        public ProductServices(IProductsRepository productRepository)
+        public ProductsServices(IProductsRepository productRepository)
         {
             _productRepository = productRepository;
         }

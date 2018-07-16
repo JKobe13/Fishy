@@ -24,6 +24,11 @@ namespace Fishy.DAL.Infrastucture
             return _items.SingleOrDefault(entity => entity.Id == id);
         }
 
+        public IEnumerable<TEntity> Get(IEnumerable<int> ids)
+        {
+            return _items.Where(x => ids.Any(id => id == x.Id));
+        }
+
         public IEnumerable<TEntity> GetAll()
         {
             return _items;

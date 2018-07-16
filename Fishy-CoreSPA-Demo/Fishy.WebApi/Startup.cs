@@ -18,8 +18,10 @@ namespace Fishy.WebApi
             services.AddMvc();
 
             services.AddSingleton<IProductsRepository, ProductsRepository>();
-            services.AddSingleton<IProductServices, ProductServices>();
+            services.AddSingleton<IOffersRepository, OffersRepository>();
 
+            services.AddSingleton<IProductsServices, ProductsServices>();
+            services.AddSingleton<IOffersServices, OffersServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

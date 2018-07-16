@@ -1,14 +1,14 @@
-﻿@model Fishy.WebApp.ViewModels.Products.ProductIndexViewModel
+﻿@model Fishy.WebApp.ViewModels.Products.ProductsIndexViewModel
 @{
     ViewData["Title"] = "Produkty";
 }
 
 <h2>Produkty</h2>
 
-<table>
-    <tr>
+<table class="w3-table w3-hoverable w3-card">
+    <tr class="w3-crismon">
         <td>Nazwa</td>
-        <td>opis</td>
+        <td>Opis</td>
     </tr>
     <tbody>
         @foreach (var singleProduct in Model.ProductsCollection)

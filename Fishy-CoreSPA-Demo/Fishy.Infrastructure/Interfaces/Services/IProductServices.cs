@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Fishy.Infrastructure.Interfaces.Services
 {
-    public interface IProductServices
+    public interface IProductsServices
     {
         Task<Product> Get(int id);
 

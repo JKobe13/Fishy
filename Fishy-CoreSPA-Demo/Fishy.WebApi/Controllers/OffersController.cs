@@ -7,32 +7,32 @@ using System.Threading.Tasks;
 namespace Fishy.WebApi.Controllers
 {
     [Route("v1/[controller]")]
-    public class ProductController : Controller
+    public class OffersController : Controller
     {
-        private IProductServices _productService;
+        private IOffersServices _offerService;
 
-        public ProductController(IProductServices productService)
+        public OffersController(IOffersServices offerService)
         {
-            _productService = productService;
+            _offerService = offerService;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var products = await _productService.GetNavigationList();
+            var products = await _offerService.GetNavigationList();
             return new ObjectResult(products);
         }
 
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetOffer")]
         public IActionResult Get(int id)
         {
-            return new ObjectResult(_productService.Get(id));
+            return new ObjectResult(_offerService.Get(id));
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Product model)
+        public IActionResult Post([FromBody]Offer model)
         {
-            var createdProduct = _productService.Add(model);
+            var createdProduct = _offerService.Add(model);
 
             return CreatedAtRoute("Get", new { id = createdProduct.Id },createdProduct);
         }

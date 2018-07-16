@@ -25,7 +25,8 @@ namespace Fishy.WebApp
             services.AddMvc();
             services.AddDirectoryBrowser();
 
-            services.AddSingleton<IProductServices, ProductApiService>();
+            services.AddSingleton<IProductsServices, ProductApiService>();
+            services.AddSingleton<IOffersServices, OfferApiService>();
             services.AddSingleton(x => new HttpClient { BaseAddress = new Uri("http://localhost:5000") });
         }
 

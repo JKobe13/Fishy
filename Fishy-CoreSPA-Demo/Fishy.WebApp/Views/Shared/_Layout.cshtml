@@ -7,41 +7,46 @@
 </head>
 <body>
     <div class="layout-header">
-        <img class="layout-header-logo" src="~/images/Logo.png" style="height:55px;"/> 
-        <span class="layout-header-logotype">Fishy Stuff</span> 
+        <img class="layout-header-logo" src="~/images/Logo.png" style="height:55px;" />
+        <span class="layout-header-logotype">Fishy Stuff</span>
     </div>
     <div>
-        <div class="layout-header-tab">@Html.ActionLink("Home", "Index", "Home")</div>
-        <div class="layout-header-tab">@Html.ActionLink("Produkty", "Index", "Products")</div>
+        <a href="@Url.Action("Index", "Home")">
+            <div class="layout-header-tab w3-btn">Home</div>
+        </a>
+        <a href="@Url.Action("Index", "Products")">
+            <div class="layout-header-tab w3-btn">Produkty</div>
+        </a>
+        <a href="@Url.Action("Index", "Offers")">
+            <div class="layout-header-tab w3-btn">Oferty</div>
+        </a>
         <br style="clear:both;" />
     </div>
-    <div class="body-section">
+    <div class="body-section w3-card-4">
         @RenderBody()
     </div>
 </body>
 </html>
 
 <style>
-    .layout-header-tab
-    {
-        padding:3px 3px 3px 10px;
-        float:left;
+    .layout-header-tab {
+        float: left;
         border-bottom: solid;
-        border-right:solid;
-        width:200px;
-        height:100%
+        border-right: solid;
+        width: 200px;
+        height: 100%
     }
 
     .first-tab {
         border-left: solid;
     }
 
-    .body-section{
-        width:900px;
-        margin:auto;
-        margin-top:25px;
-        padding:15px;
-        border:solid;
+    .body-section {
+        width: 900px;
+        margin: auto;
+        margin-top: 25px;
+        padding: 15px;
+        border: solid;
     }
 
     .layout-header {

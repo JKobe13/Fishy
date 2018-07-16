@@ -7,16 +7,16 @@ namespace Fishy.WebApp.Controllers
 {
     public class ProductsController : Controller
     {
-        private IProductServices _productServices;
+        private IProductsServices _productServices;
 
-        public ProductsController(IProductServices productServices)
+        public ProductsController(IProductsServices productServices)
         {
             _productServices = productServices;
         }
 
         public async Task<ActionResult> Index()
         {
-            var data = new ProductIndexViewModel
+            var data = new ProductsIndexViewModel
             {
                 ProductsCollection = await _productServices.GetNavigationList()
             };

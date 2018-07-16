@@ -1,0 +1,34 @@
+﻿@model Fishy.WebApp.ViewModels.Offers.OffersIndexViewModel
+@{
+    ViewData["Title"] = "Oferty";
+}
+
+<h2>Oferty</h2>
+
+<table class="w3-table w3-hoverable w3-card">
+    <tr class="w3-crismon">
+        <td>Produkt</td>
+        <td>Koszt</td>
+        <td>Domyślna marża</td>
+        <td>Cena</td>
+    </tr>
+    <tbody>
+        @foreach (var singleOffer in Model.OffersCollection)
+        {
+            <tr>
+                <td>
+                    @singleOffer.ProductName
+                </td>
+                <td>
+                    @singleOffer.Cost
+                </td>
+                <td>
+                    @(singleOffer.DefaultMargin * 100) %
+                </td>
+                <td>
+                    @singleOffer.Price
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
