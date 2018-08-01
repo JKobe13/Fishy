@@ -3,8 +3,9 @@
 
 TO DO:
 - CI (jenkins?)
-- appsettings/connection strings
+- Appsettings/connection strings
 
 DONE:
-- git ignore
+- Git ignore
 - Add header forwards for nginx
+- AutoMapper
