@@ -1,0 +1,21 @@
+﻿@model Fishy.WebApp.ViewModels.Products.ProductViewModel
+
+
+<div class="w3-container w3-crismon">
+    <h2>@ViewBag.Title</h2>
+</div>
+@using (Html.BeginForm("ModifyProduct", "Products", FormMethod.Post, new { @class = "w3-container" }))
+{
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(m => m.Id)
+
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name, new { @class = "w3-input" })
+
+    @Html.LabelFor(m => m.Description)
+    @Html.TextBoxFor(m => m.Description, new { @class = "w3-input" })
+
+    <a href="@Url.Action("Index","Products")"><input type="button" value="Wstecz" class="w3-btn w3-crismon" /></a>
+
+    <input type="submit" value="Zapisz" class="w3-btn w3-crismon" />
+}

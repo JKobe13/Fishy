@@ -5,11 +5,11 @@ using System.Linq.Expressions;
 
 namespace Fishy.DAL.Infrastucture
 {
-    public abstract class GenericRepository<TEntity>:IGenericRepository<TEntity> where TEntity : Entity 
+    public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : Entity
     {
-        public IEnumerable<TEntity> _items;
+        public List<TEntity> _items;
 
-        protected GenericRepository(IEnumerable<TEntity> itemsCollection)
+        protected GenericRepository(List<TEntity> itemsCollection)
         {
             _items = itemsCollection;
         }
@@ -45,11 +45,27 @@ namespace Fishy.DAL.Infrastucture
             {
                 var maxID = !_items.Any() ? 0 : _items.Max(x => x.Id);
                 entity.Id = maxID + 1;
+                _items.Add(entity);
+                return entity;
             }
+            if (!_items.Any(x => x.Id == entity.Id))
+            {
+                _items.Add(entity);
+                return entity;
+            }
+            else throw new Exception($"Index conflict on {typeof(TEntity).Name}");
+        }
 
-            _items.Append(entity);
-
-            return entity;
+        public TEntity Modify(TEntity entity)
+        {
+            var entityToEdit = Get(entity.Id);
+            if (entityToEdit != null)
+            {
+                var index = _items.IndexOf(entityToEdit);
+                _items[index] = entity;
+                return _items[index];
+            }
+            else throw new Exception($"No entity with Id");
         }
     }
 }

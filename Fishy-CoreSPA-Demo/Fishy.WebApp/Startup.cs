@@ -5,8 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Fishy.Infrastructure.DTO.API.Input;
+using Fishy.Infrastructure.DTO.API.Output;
 using Fishy.Infrastructure.Interfaces.Services;
 using Fishy.Infrastructure.Services;
+using Fishy.WebApp.ViewModels.Products;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,7 +28,7 @@ namespace Fishy.WebApp
             services.AddMvc();
             services.AddDirectoryBrowser();
 
-            services.AddSingleton<IProductsServices, ProductApiService>();
+            services.AddSingleton<ProductApiService, ProductApiService>();
             services.AddSingleton<IOffersServices, OfferApiService>();
             services.AddSingleton(x => new HttpClient { BaseAddress = new Uri("http://localhost:5000") });
         }
@@ -66,7 +69,11 @@ namespace Fishy.WebApp
                 await next();
             });
 
-           
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<ProductDto, ProductViewModel>();
+                cfg.CreateMap<ProductViewModel, ProductModifyDto>();
+            });
 
             app.UseMvc(routes =>
             {

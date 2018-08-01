@@ -6,6 +6,9 @@ using Fishy.Infrastructure.Interfaces.Services;
 using Fishy.Infrastructure.Services;
 using Microsoft.AspNetCore.HttpOverrides;
 using System.Linq;
+using Fishy.DAL.Models;
+using Fishy.Infrastructure.DTO.API.Output;
+using Fishy.Infrastructure.DTO.API.Input;
 
 namespace Fishy.WebApi
 {
@@ -30,6 +33,13 @@ namespace Fishy.WebApi
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.All
+            });
+
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Product, ProductDto>();
+                cfg.CreateMap<ProductModifyDto, Product>();
+                
             });
 
             app.Use(async (context, next) =>

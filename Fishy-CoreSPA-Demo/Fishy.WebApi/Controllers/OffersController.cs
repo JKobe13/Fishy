@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fishy.WebApi.Controllers
 {
-    [Route("v1/[controller]")]
+    [Route("v1/products/{productId}/offers")]
     public class OffersController : Controller
     {
         private IOffersServices _offerService;
@@ -17,14 +17,14 @@ namespace Fishy.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetOffers()
         {
             var products = await _offerService.GetNavigationList();
             return new ObjectResult(products);
         }
 
         [HttpGet("{id}", Name = "GetOffer")]
-        public IActionResult Get(int id)
+        public IActionResult GetOffer([FromRoute]int productId, [FromRoute]int id)
         {
             return new ObjectResult(_offerService.Get(id));
         }

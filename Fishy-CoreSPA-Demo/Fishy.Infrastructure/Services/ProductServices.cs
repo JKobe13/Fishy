@@ -16,24 +16,28 @@ namespace Fishy.Infrastructure.Services
             _productRepository = productRepository;
         }
 
-        public async Task<List<Product>> GetNavigationList()
+        public List<Product> GetNavigationList()
         {
             var result = _productRepository.GetAll().ToList();
             return result;
         }
 
-        public async Task<Product> Get(int id)
+        public  Product Get(int id)
         {
             var result = _productRepository.Get(id);
             return result;
         }
 
-        public async Task<Product> Add(Product product)
+        public  Product Add(Product product)
         {
             var result = _productRepository.Add(product);
 
             return result;
         }
-
+        public Product Modify(Product product)
+        {
+            var result = _productRepository.Modify(product);
+            return result;
+        }
     }
 }

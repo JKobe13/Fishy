@@ -15,5 +15,7 @@ namespace Fishy.DAL.Infrastucture
         IEnumerable<TEntity> Find(Func<TEntity, bool> predicate);
 
         TEntity Add(TEntity entity);
+
+        TEntity Modify(TEntity entity);
     }
 }

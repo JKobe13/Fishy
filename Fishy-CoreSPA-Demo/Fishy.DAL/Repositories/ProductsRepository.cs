@@ -6,7 +6,7 @@ namespace Fishy.DAL.Repositories
 {
     public class ProductsRepository: GenericRepository<Product>, IProductsRepository
     {
-        private static IEnumerable<Product> _defaultItems = new List<Product>()
+        private static List<Product> _defaultItems = new List<Product>()
         {
             new Product{Id=1,Name="Pomarańcza",Description="Jest pomarańczowa" },
             new Product{Id=2,Name="Ogień",Description="Może poparzyć" },

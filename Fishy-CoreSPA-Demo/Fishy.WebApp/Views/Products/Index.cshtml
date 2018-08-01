@@ -2,23 +2,31 @@
 @{
     ViewData["Title"] = "Produkty";
 }
-
+<div>
 <h2>Produkty</h2>
+<div class="w3-button w3-crismon" style="float: right;"> <a href="@Url.Action("ModifyProduct")"><i class="fas fa-plus"></i> Dodaj</a></div>
+</div>
+
+
 
 <table class="w3-table w3-hoverable w3-card">
     <tr class="w3-crismon">
         <td>Nazwa</td>
         <td>Opis</td>
+        <td></td>
     </tr>
     <tbody>
         @foreach (var singleProduct in Model.ProductsCollection)
         {
-            <tr>
+            <tr class="product-link" data-id="@singleProduct.Id">
                 <td>
                     @singleProduct.Name
                 </td>
                 <td>
                     @singleProduct.Description
+                </td>
+                <td>
+                    <div class="w3-button w3-tiny" style="float: right;"> <a href="@Url.Action("ModifyProduct","Products", new {id=singleProduct.Id})"><i class="fas fa-edit"></i> Edytuj</a></div>
                 </td>
             </tr>
         }
